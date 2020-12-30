@@ -5,6 +5,14 @@ public class Car {
     private String model;
     private String mark;
 
+    public Car() {
+    }
+
+    public Car(String mark, String model) {
+        this.model = model;
+        this.mark = mark;
+    }
+
     public String getModel() {
         return model;
     }

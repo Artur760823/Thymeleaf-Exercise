@@ -10,8 +10,9 @@ public class HelloController {
 
     @GetMapping("/hello")
     public String get(Model model){
-
+        Car car = new Car("BMW", "i8");
         model.addAttribute("name", "Artur");
+        model.addAttribute("car", car);
         return "hello";
     }
 }
