@@ -28,4 +28,9 @@ public class Car {
     public void setMark(String mark) {
         this.mark = mark;
     }
+
+    @Override
+    public String toString() {
+        return String.format("Car: mark: %s, model %s", getMark(), getModel());
+    }
 }
